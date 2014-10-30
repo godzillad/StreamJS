@@ -37,17 +37,22 @@ Methods
 Usage 
 -----
 1)
+```
 var s1 = new Stream(2,3);
 console.log(s1.take(5));
+```
 > [2,5,8,11,14]
  
 2)
+```
 var s2 = new Stream(99);
 var s3 = s1.cons(s2);
 console.log(s3.take(5));
+```
 > [2,99,100,101,102]
 
 3)
+```
 function isFiver (n){
 	if (n%5 ==0)
 		return true;
@@ -57,9 +62,11 @@ function isFiver (n){
 
 var s4 = s1.filter(isFiver);
 console.log(s4.take(5));
+```
 >[5,20,35,50,65]
 
 4)
+```
 function isPrime(n){ 
 	if (n == 2)
 		return true;
@@ -71,6 +78,6 @@ function isPrime(n){
 var primes = new Stream(2).cons ( new Stream(3,2).filter(isPrime));
 
 console.log(primes.take(5));
+```
 >[2,3,5,7,11]
 
---------------
