@@ -73,4 +73,4 @@ var primes = new Stream(2).cons ( new Stream(3,2).filter(isPrime));
 console.log(primes.take(5));
 >[2,3,5,7,11]
 
-
+--------------
