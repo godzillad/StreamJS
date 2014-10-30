@@ -40,5 +40,4 @@ function Stream(start,step,filterFunc){
 	}
 }
 
-
-
+//////////////////////////
